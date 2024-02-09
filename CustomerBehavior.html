@@ -82,84 +82,96 @@
     <section id="stocks" class="portfolio-details">
       <div class="container">
         <div class="portfolio-description">
-          <h2>Customer Shopping Behavior.</h2>
-          <h3>Overview</h3>
-          <p>
-            In the realm of retail and commerce, businesses face the challenge of understanding and 
-            adapting to the ever-evolving landscape of consumer behavior. The Consumer Behavior and Shopping 
-            Habits Dataset offers a wealth of information encompassing demographic details, purchase history, 
-            product preferences, shopping frequency, and online/offline shopping behavior. However, despite the 
-            richness of this dataset, there exists a pressing need to extract actionable insights that can empower 
-            businesses to make informed decisions.
-            
-            The primary challenge lies in unraveling the intricate patterns and preferences embedded within the 
-            dataset. Analysts and researchers must navigate through the vast array of variables to discern meaningful 
-            correlations, identify key influencers, and unlock the underlying drivers that shape consumer decision-making processes.
+          <div class="portfolio-item filter-EDA text-center">
+          <h1><b>Customer Shopping Behavior.</b></h1></div>
+    
+          <style>
+            /* Add your custom styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h2 {
+                color: #333;
+            }
+            /* Add more styles as needed */
+        </style>
+          <h2>Introduction:</h2>
+    <p>
+        In the dynamic landscape of retail and commerce, understanding and adapting to consumer behavior is crucial for businesses. The Consumer Behavior Dataset provides a comprehensive view of customer demographics, purchase history, and preferences. Extracting actionable insights from this rich dataset is essential for informed decision-making.
+    </p>
 
-            <h3>Dataset</h3>
+    <h2>Dataset:</h2>
+    <p>
+        Variables: Customer ID, Age, Gender, Item Purchased, Category, Purchase Amount (USD), Location, Size, Color, Season, Review Rating, Subscription Status, Shipping Type, Discount Applied, Promo Code Used, Previous Purchases, Payment Method, Frequency of Purchases.
+    </p>
+    <p>
+        Method: Conduct a comprehensive exploratory analysis to uncover patterns and trends in consumer behavior.
+    </p>
+              
+  <h2>Analysis Summary:</h2>
 
-            <p>Customer ID:A unique identifier assigned to each individual customer, facilitating tracking and analysis of their shopping behavior over time.
+ <h5><b>1. Demographics and Customer Distribution:</h5></b>
+    <p><li>
+        Diverse customer base across age groups with a concentration in the 50-60 years range. </li>
+        <li>Higher proportion of male customers, suggesting the need for targeted marketing strategies.
+      </li></p>
 
-              Age: The age of the customer.
-              
-              Gender: The gender identification of the customer.
-              
-              Item Purchased: The specific product or item selected by the customer during the transaction.
-              
-              Category: The broad classification or group to which the purchased item belongs.
-              
-              Purchase Amount (USD): The monetary value of the transaction, denoted in United States Dollars (USD).
-              
-              Location: The geographical location where the purchase was made.
-              
-              Size: The size specification (if applicable) of the purchased item.
-              
-              Color: The color variant or choice associated with the purchased item.
-              
-              Season: The seasonal relevance of the purchased item.
-              
-              Review Rating: A numerical or qualitative assessment provided by the customer regarding their satisfaction with the purchased item.
-              
-              Subscription Status: Indicates whether the customer has opted for a subscription service.
-              
-              Shipping Type: Specifies the method used to deliver the purchased item.
-              
-              Discount Applied: Indicates if any promotional discounts were applied to the purchase.
-              
-              Promo Code Used: Notes whether a promotional code or coupon was utilized during the transaction.
-              
-              Previous Purchases: Provides information on the number or frequency of prior purchases made by the customer.
-              
-              Payment Method: Specifies the mode of payment employed by the customer.
-              
-              Frequency of Purchases: Indicates how often the customer engages in purchasing activities.</p>
+    <h5><b>2. Product Preferences and Seasonal Trends:</h5></b>
+    <p>
+        <li>Top-selling categories include clothes, jewelry, blouse, and pants. 
+          <li>Seasonal variations impact product performance, emphasizing the need for adaptive inventory management and targeted seasonal marketing.
+    </p>
 
-            <h3>Exploratory Analysis:</h3>
+    <h5><b>3. Purchase Behavior and Subscription Impact:</h5></b>
+    <p><li>
+        Average purchase amounts remain consistent, but subscribed customers make more frequent purchases. </li>
+        <li>Non-subscribers tend to spend more per transaction, highlighting the need for loyalty programs and encouraging subscription signups.
+    </p>
 
-            Conduct a comprehensive exploratory analysis of the Consumer Behavior and Shopping Habits 
-            Dataset to uncover hidden patterns and trends.
-            Identify key demographic factors influencing purchasing behavior, preferred product categories, 
-            and discernible patterns in shopping frequency.
-            
-            <h3>Solution</h3>
-            <p>By achieving these objectives, businesses can derive actionable insights for:
+    <h5><b>4. Geographical Variances:</h5></b>
+    <p><li>
+        Montana records the highest number of purchases, but preferences vary by location. 
+        <li> marketing campaigns to regional preferences, leveraging location-specific demands.
+    </p>
 
-              Crafting Targeted Marketing Strategies: Tailoring marketing campaigns to resonate with specific demographic segments and individual preferences.
-              Optimizing Product Offerings: Adjusting product assortments based on identified trends and consumer preferences to meet market demands effectively.
-              Enhancing Customer Satisfaction: Implementing strategies to improve the overall shopping experience, both online and offline, by aligning with consumer expectations.
+    <h5><b>5. Payment Methods and Shipping Preferences:</h5></b>
+    <p>
+        <li>PayPal is the dominant payment method, especially among customers aged 50-59. 
+          <li>Gender-specific payment preferences suggest the need for tailored checkout experiences. Free shipping is the most preferred option, impacting customer satisfaction and average payment amounts.
+    </p>
+
+    <h5><b>6. Promo Code Usage and Product Category Preferences:</h5></b>
+    <p>
+        <li>Promo codes exhibit seasonal trends, with higher usage in spring and lower in fall. 
+          <li>Tailor promo code offerings to align with seasonal patterns. Certain product categories such as clothes, accessories, footwear, and outerwear consistently perform well across seasons, providing opportunities for targeted marketing and promotions.
+    </p>          
+    <h3><b>Actionable Insights:</b></h3>
           
-          In essence, the challenge at hand is to transform raw data into strategic intelligence, enabling businesses to proactively adapt to the dynamic landscape of consumer behavior and foster sustainable growth in the competitive retail environment.</p>
+    <li>Craft targeted marketing strategies considering age and gender diversity.</li>
+              <li>Optimize inventory based on top-selling categories and adapt to seasonal trends.</li>
+              <li> Focus on loyalty programs to encourage subscription signups and frequent purchases.</li>
+              <li>Customize marketing campaigns to regional preferences.</li>
+              <li>Tailor checkout experiences based on gender-specific payment preferences.</li>
+            <li>Align promo code offerings with seasonal patterns and promote consistently performing product categories.</li>
+          
+          <p>By implementing these insights, businesses can enhance their marketing strategies, optimize product offerings, and improve overall customer satisfaction, leading to sustained growth in the competitive retail environment.</p>
+          
             
-          </p>
+         
+
+
+          <h3><b>Data Visualization</b></h3>
         </div>
         
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+          <div class="col-lg-12">
+            <div class="portfolio-details-slider swiper" style="max-width: 80%;" style="max-height: 100%;">
+              
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/Frequency of purchase.png" alt="">
+                  <img src="assets/img/Frequency of purchase.png" alt="" >
                 </div>
 
                 <div class="swiper-slide">
@@ -180,7 +192,7 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Exploratory Data Analysis</li>
-                <li><strong>Client</strong>: Myself</li>
+                <li><strong>Client</strong>: Datafarmers</li>
                 <li><strong>Project date</strong>: January 2024</li>
                 <li><strong>Project URL</strong>: <a href="https://github.com/Mahlori-Baloyi/Stocks_Market_Analysis" target="_blank">github</a></li>
               </ul>
