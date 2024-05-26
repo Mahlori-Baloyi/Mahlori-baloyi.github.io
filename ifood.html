@@ -17,7 +17,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/portfolio.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -53,8 +53,13 @@
   </header>
 
   <main id='main'>
+    <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
 
-    <h1>iFood Advanced Data Analyst Case Report.</h1>
+       <div class="row justify-content-center">
+        <div class="col-lg-5">
+    <h1><strong>iFood Advanced Data Analyst Case Report.</strong></h1>
+    </div>
     <h2>Introduction</h2>
     <p>iFood, the leading food delivery app in Brazil, is present in over a thousand cities. To maintain and grow its market leadership, keeping a high customer engagement is crucial. This report analyzes a sample dataset that simulates customer meta-information and interactions with iFood campaigns. The goal is to analyze the data, uncover business opportunities and insights, and propose data-driven actions to optimize the results of future marketing campaigns.</p>
 
@@ -68,25 +73,24 @@
       </ul>
     </ul>
 
-    <ul><h4>Understanding The Data:</h4>
-
-    <ul><li>The dataset contains 2,240 rows and several socio-demographic and firmographic features, along with campaign response flags.</li>
-    <li>Key features include past campaign responses (AcceptedCmp1 to AcceptedCmp5), customer complaints (Complain), enrollment date (DtCustomer), education level, marital status, household composition (Kidhome and Teenhome), income, spending on different product categories, and purchase behavior through various channels. 
-<li>Data was obtained from <a href="https://www.kaggle.com/datasets/georgerocha/ifooddataadvancedanalyticstest?select=ml_project1_data.csv">Kaggle.</a></li>
-</li>
-</ul>
-</li>
-  </ul>
+    <ul>
+      <h4>Understanding The Data:</h4>
+      <ul>
+        <li>The dataset contains 2,240 rows and several socio-demographic and firmographic features, along with campaign response flags.</li>
+        <li>Key features include past campaign responses (AcceptedCmp1 to AcceptedCmp5), customer complaints (Complain), enrollment date (DtCustomer), education level, marital status, household composition (Kidhome and Teenhome), income, spending on different product categories, and purchase behavior through various channels. </li>
+        <li>Data was obtained from <a href="https://www.kaggle.com/datasets/georgerocha/ifooddataadvancedanalyticstest?select=ml_project1_data.csv">Kaggle.</a></li>
+      </ul>
+    </ul>
     <h3>Demographic Insights.</h3>
 
-    <ul><h4>1. Age Distribution of Respondents</h4>
-
-    
     <ul>
-      <img src="assets/img/iFood/1.png" width="550" height="450">
-      <li>The majority of respondents belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
-    <li>The least represented age group among respondents is 80+ (0%).</li>
-  </ul>
+      <h4>1. Age Distribution of Respondents</h4>    
+      <ul>
+        <img src="assets/img/iFood/1.png" width="550" height="450">
+        <li>The majority of respondents belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
+      <li>The least represented age group among respondents is 80+ (0%).</li>
+    </ul>
+    </ul>
 
 
    <h4>2. Education Level</h4>
@@ -97,14 +101,17 @@
       <li>Respondents appear to be well-educated. Specifically, 51% hold a graduate-level degree. Among these, 21% have a PhD, 17% have a master's degree, 9% have completed a second-cycle degree, and 3% have basic education. </li></ul>
 
     <h4>3. Marital Status </h4>
+    <ul>
     <img src="assets/img/iFood/3.png" width="550" height="450">
-    <ul><li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. </li></ul>
+     <li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. </li>
+  </ul>
 
-    <h4>4. Household Composition </h4>
+    <h4>4. Household Composition (Small kids)</h4>
     
     <ul>
       <img src="assets/img/iFood/4.png" width="550" height="450">
       <li>In terms of children, 57% of respondents have no children at home, 41% have one child, and 2% have two children.</li>
+      <h4>Household Composition (Teenagers)</h4>
     <img src="assets/img/iFood/5.png" width="550" height="450">
     <li>Regarding teenagers, 51% have no teenagers at home, 46% have one teenager, and 2% have two teenagers. </li>
     </ul>
@@ -141,6 +148,9 @@
     <ul>
       <img src="assets/img/iFood/10.png" width="550" height="450">
       <li>Majority of respondents who accepted the offer have no children (16%) or one child (12%). The acceptance rate drops significantly for respondents with two children (4%). </li>
+    </ul>
+
+    <ul>
     <img src="assets/img/iFood/11.png" width="550" height="450">
     <li>A similar trend is observed for teenagers at home, with 20% of respondents with no teenagers accepting the offer, compared to 9% with one teenager and 8% with two teenagers. </li></ul>
 
@@ -322,7 +332,9 @@ These metrics indicate that the model performs reasonably well in predicting cus
   <h3>Conclusion </h3>
 
   <p>By understanding the characteristics and behaviors of respondents, iFood can optimize its marketing campaigns to increase customer engagement and profitability. The predictive model developed can be a valuable tool for targeting the right customers and improving campaign outcomes. With these insights and strategies, iFood can strengthen its market position and achieve its business objectives. </p>
-
+</div>
+</div>
+</section>
 </main>
 
 
