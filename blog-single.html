@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DevFolio Bootstrap Portfolio Template - Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    max-width: 800px;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2 ,h3 {
+    color: #00006B; /* Dark blue, lighter by 25% */
+    
+}
+p {
+    margin: 1em 0;
+}
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+#header.header-scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px 0;
+}
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 30px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  white-space: nowrap;
+  transition: 0.3s;
+  letter-spacing: 0.4px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 80%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #4e4e4e;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #0078ff;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(78, 78, 78, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile>ul>li {
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #4e4e4e;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #0078ff;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #0078ff;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
+main {
+  padding-top: 80px;
+  padding-bottom: 40px; /* Adjust based on the height of the header */
+}
+</style>
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" style="background:rgba(0, 0, 0, 0.9)">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Mahlori</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+         
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <main id='main'>
+
+    <h1>iFood Advanced Data Analyst Case</h1>
+    <h2>Introduction</h2>
+    <p>iFood, the leading food delivery app in Brazil, is present in over a thousand cities. To maintain and grow its market leadership, keeping a high customer engagement is crucial. This report analyzes a sample dataset that simulates customer meta-information and interactions with iFood campaigns. The goal is to analyze the data, uncover business opportunities and insights, and propose data-driven actions to optimize the results of future marketing campaigns.</p>
+
+    <h2>Exploratory Data Analysis (EDA)</h2>
+
+    <h3>Demographic Insights.</h3>
+
+    <ul><h4>1. Age Distribution of Respondents</h4>
+
+    
+    <ul>
+      <img src="assets/img/iFood/1.png" width="550" height="450">
+      <li>The majority of respondents who accepted the final campaign offer belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
+    <li>The least represented age group among respondents is 80+ (0%).</li></ul>
+
+
+    <h4>2. Education Level</h4>
+
+    
+    <ul>
+      <img src="assets/img/iFood/2.png" width="550" height="450">
+      <li>Respondents appear to be well-educated. Specifically, 51% hold a graduate-level degree. Among these, 21% have a PhD, 17% have a master's degree, 9% have completed a second-cycle degree, and 3% have basic education. </li></ul>
+
+    <h4>3. Marital Status </h4>
+    <img src="assets/img/iFood/3.png" width="550" height="450">
+    <ul><li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. </li></ul>
+
+    <h4>4. Household Composition </h4>
+    
+    <ul>
+      <img src="assets/img/iFood/4.png" width="550" height="450">
+      <li>In terms of children, 57% of respondents have no children at home, 41% have one child, and 2% have two children.</li>
+    <img src="assets/img/iFood/4.png" width="550" height="450">
+    <li>Regarding teenagers, 51% have no teenagers at home, 46% have one teenager, and 2% have two teenagers. </li>
+    </ul>
+
+    <h4>5. Income Distribution </h4>
+    
+    <ul>
+      <img src="assets/img/iFood/5.png" width="550" height="450">
+      <li>The wealth distribution is even, with an equal number of respondents across every income quintile. </li>
+    </ul>
+</ul>
+
+    <h3>Response Analysis</h3>
+  <ul>
+    <h4>1. Age Group vs. Response</h4>
+    
+    <ul>
+      <img src="assets/img/iFood/6.png" width="550" height="450">
+      <li>The 35-39 age group has the highest acceptance rate for the campaign (25%), followed by the 70+ group (21%). </li></ul>
+
+    <h4>2. Education Level vs. Response </h4>
+    
+    <ul><img src="assets/img/iFood/7.png" width="550" height="450">
+      <li>There is a trend suggesting that respondents with higher education levels, especially those with a PhD, are more likely to accept the campaign offer. Specifically, 20% of PhD holders accepted the offer, followed by 15% of those with a master's degree, 13% of those with a graduate-level education, and 11% of those with a second-cycle education. </li></ul>
+
+    <h4>3. Marital Status vs. Response </h4>
+    
+    <ul>
+      <img src="assets/img/iFood/8.png" width="550" height="450">
+      <li>Those without partners show higher acceptance rates. Specifically, 22% of single and widowed respondents accepted the offer, followed by 20% of divorced respondents. Acceptance rates are lower among married (11%) and those living together (10%). </li></ul>
+
+    <h4>4. Household Composition vs. Response </h4>
+    
+    <ul>
+      <img src="assets/img/iFood/9.png" width="550" height="450">
+      <li>Majority of respondents who accepted the offer have no children (16%) or one child (12%). The acceptance rate drops significantly for respondents with two children (4%). </li>
+    <img src="assets/img/iFood/10.png" width="550" height="450">
+    <li>A similar trend is observed for teenagers at home, with 20% of respondents with no teenagers accepting the offer, compared to 9% with one teenager and 8% with two teenagers. </li></ul>
+
+    <h4>5. Income vs. Response </h4>
+    
+    <ul><img src="assets/img/iFood/11.png" width="550" height="450">
+      <li>The highest income group has the highest acceptance rate (28%), followed by the lowest income group (13%). Middle-income groups show lower acceptance rates. </li>
+  </ul>
+
+</ul>
+  <h3>Correlation Analysis </h3>
+
+<ul>
+  <li><h4>Income:</h4> </li>
+  <ul>
+    <li>Positively correlated with spending on wines (strong), meat products (strong), and purchases made through catalogs (strong).</li> 
+
+    <li>Negatively correlated with the number of web visits in the last month and the number of small children in the household. </li>
+  </ul>
+
+  <li><h4>Number of Web Visits: </h4></li>
+
+    <ul><li>Negatively correlated with catalog purchases and spending on meat products.</li> </ul>
+</ul>
+
+
+<h3>CUSTOMER SEGMENTATION AND PROFILES </h3>
+
+          <p>Customers were divided into 4 groups income-based segmentation. </p>
+
+          
+            <ul>
+              <strong>1. High Income Group</strong>
+
+              <ul><li>Characteristics: High spending on products, lowest number of website visits per month, prefer in-store purchases, low number of deals and catalog purchases, majority have no children at home.</li> </ul>
+
+              <strong>2. Low Income Group </strong>
+
+              <ul><li>Characteristics: Higher number of website visits, preferable catalog purchases, higher number of deals, have children at home. </li></ul>
+
+              <strong>3. Middle Income Group </strong>
+            
+             <ul><li>Characteristics: Moderate spending on products, balanced number of website visits and in-store purchases, majority have no children at home. </li></ul>
+             
+             <strong>4. Family Group </strong>
+
+             <ul><li>Characteristics: Lower spending on products, higher number of website visits, higher number of deals and catalog purchases, have children and teenagers at home.</li></ul>
+          </ul>
+
+      <div>
+        <h3>The table below shows the segements and the average of each characteristic.</h3>
+      </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-md-3 profile">
+              <p><strong>High Income Profile</strong></p>
+              <ul>
+                <li>Income: 75,181</li>
+                <li>Kidhome: 0</li>
+                <li>Teenhome: 0</li>
+                <li>MntWines: 562</li>
+                <li>MntFruits: 71</li>
+                <li>MntMeatProducts: 449</li>
+                <li>MntFishProducts: 101</li>
+                <li>MntSweetProducts: 73</li>
+                <li>MntGoldProds: 78</li>
+                <li>NumDealsPurchases: 1</li>
+                <li>NumWebPurchases: 5</li>
+                <li>NumCatalogPurchases: 6</li>
+                <li>NumStorePurchases: 9</li>
+                <li>NumWebVisitsMonth: 3</li>
+                <li>Age: 52</li>
+                <li>Education: Graduation</li>
+              </ul>
+            </div>
+            <div class="col-md-3 profile">
+              <p><strong>Middle Income Group</strong></p>
+              <ul>
+                <li>Income: 29,582</li>
+                <li>Kidhome: 1</li>
+                <li>Teenhome: 0</li>
+                <li>MntWines: 33</li>
+                <li>MntFruits: 7</li>
+                <li>MntMeatProducts: 27</li>
+                <li>MntFishProducts: 10</li>
+                <li>MntSweetProducts: 7</li>
+                <li>MntGoldProds: 18</li>
+                <li>NumDealsPurchases: 2</li>
+                <li>NumWebPurchases: 2</li>
+                <li>NumCatalogPurchases: 1</li>
+                <li>NumStorePurchases: 4</li>
+                <li>NumWebVisitsMonth: 7</li>
+                <li>Age: 42</li>
+                <li>Education: Graduation</li>
+              </ul>
+            </div>
+            <div class="col-md-3 profile">
+              <p><strong>Middle Income Group</strong></p>
+              <ul>
+                <li>Income: 59,510</li>
+                <li>Kidhome: 0</li>
+                <li>Teenhome: 0</li>
+                <li>MntWines: 506</li>
+                <li>MntFruits: 24</li>  
+                <li>MntMeatProducts: 242</li>
+                <li>MntFishProducts: 32</li>
+                <li>MntSweetProducts: 24</li>
+                <li>MntGoldProds: 64</li>
+                <li>NumDealsPurchases: 4</li>
+                <li>NumWebPurchases: 7</li>
+                <li>NumCatalogPurchases: 3</li>
+                <li>NumStorePurchases: 8</li>
+                <li>NumWebVisitsMonth: 6</li>
+                <li>Age: 55</li>
+              </ul>
+            </div>
+            <div class="col-md-3 profile">
+              <p><strong>Family Group</strong></p>
+              <ul>
+                <li>Income: 41,518</li>
+                <li>Kidhome: 1</li>
+                <li>Teenhome: 1</li>
+                <li>MntWines: 68</li>
+                <li>MntFruits: 4</li>
+                <li>MntMeatProducts: 26</li>
+                <li>MntFishProducts: 6</li>
+                <li>MntSweetProducts: 4</li>
+                <li>MntGoldProds: 15</li>
+                <li>NumDealsPurchases: 2</li>
+                <li>NumWebPurchases: 2</li>
+                <li>NumCatalogPurchases: 1</li>
+                <li>NumStorePurchases: 4</li>
+                <li>NumWebVisitsMonth: 6</li>
+                <li>Age: 56</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+<!---Predictive Modeling 
+
+Using a RandomForestClassifier, we developed a predictive model to identify customers most likely to respond positively to the marketing campaign. 
+
+Accuracy: 0.892 
+
+AUC (Area Under Curve): 0.647 
+
+RMSE (Root Mean Squared Error): 0.329 
+
+These metrics indicate that the model performs reasonably well in predicting customer responses, with high accuracy and acceptable error rates. The model can be used to target customers more effectively in future campaigns, potentially increasing the acceptance rate and profitability. 
+--->
+
+  <h3>Recommendations </h3>
+
+  <ul>
+    <li><h4>Targeted Campaigns: </h4></li>
+    <ul>
+      <li>Focus on customers with higher education levels, particularly PhD holders, as they show higher acceptance rates. </li>
+
+      <li>Tailor campaigns to single and widowed customers, who are more likely to accept offers. </li>
+    </ul>
+    <li><h4>Age-Specific Strategies: </h4></li>
+
+    <ul>
+      <li>Develop age-specific marketing strategies, with a particular focus on the 35-39 and 70+ age groups. </li>
+    </ul>
+    <li><h4>Income-Based Segmentation: </h4></li>
+
+    <ul><li>Implement income-based segmentation to target high-income individuals, who show the highest acceptance rates.</li> </ul>
+
+    <li><h4>Optimizing Household Targeting: </h4></li>
+
+    <ul><li>Consider household composition in marketing strategies, focusing on individuals without children or teenagers at home. </li></ul>
+
+  </ul>
+
+  <h3>Conclusion </h3>
+
+  <p>By understanding the characteristics and behaviors of respondents, iFood can optimize its marketing campaigns to increase customer engagement and profitability. The predictive model developed can be a valuable tool for targeting the right customers and improving campaign outcomes. With these insights and strategies, iFood can strengthen its market position and achieve its business objectives. </p>
+
+
+
+
+</main>
+</body>
+
+</html>
