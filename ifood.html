@@ -54,57 +54,58 @@
 
   <main id='main'>
     <section id="portfolio-details" class="portfolio-details">
-    <div class="container">
+      <div class="container">
 
        <div class="row justify-content-center">
         <div class="col-lg-5">
-    <h1><strong>iFood Advanced Data Analyst Case Report.</strong></h1>
-    </div>
-    <h2>Introduction</h2>
-    <p>iFood, the leading food delivery app in Brazil, is present in over a thousand cities. To maintain and grow its market leadership, keeping a high customer engagement is crucial. This report analyzes a sample dataset that simulates customer meta-information and interactions with iFood campaigns. The goal is to analyze the data, uncover business opportunities and insights, and propose data-driven actions to optimize the results of future marketing campaigns.</p>
+          <h1><strong>iFood Advanced Data Analyst Case Report.</strong></h1>
+        </div>
+        <h2>Introduction</h2>
+        <p>iFood, the leading food delivery app in Brazil, is present in over a thousand cities. To maintain and grow its market leadership, keeping a high customer engagement is crucial. This report analyzes a sample dataset that simulates customer meta-information and interactions with iFood campaigns. The goal is to analyze the data, uncover business opportunities and insights, and propose data-driven actions to optimize the results of future marketing campaigns.</p>
 
-    <h2>Exploratory Data Analysis (EDA)</h2>
-    <ul>
-      <h4>Main Takeaways:</h4>
+        <h2>Exploratory Data Analysis (EDA)</h2>
+        <ul>
+          <h4>Main Takeaways:</h4>
+          <ul>
+              <li>Higher acceptance rates among 35-39 age group, PhD holders, and those without partners or kids at home.</li>
+              <li>Majority of accepted offers are from respondents without kids or teenagers at home.</li>
+              <li>High-income individuals show the highest acceptance rates.</li>
+          </ul>
+        </ul>
+
+        <ul>
+          <h4>Understanding The Data:</h4>
+          <ul>
+            <li>The dataset contains 2,240 rows and several socio-demographic and firmographic features, along with campaign response flags.</li>
+            <li>Key features include past campaign responses (AcceptedCmp1 to AcceptedCmp5), customer complaints (Complain), enrollment date (DtCustomer), education level, marital status, household composition (Kidhome and Teenhome), income, spending on different product categories, and purchase behavior through various channels. </li>
+            <li>Data was obtained from <a href="https://www.kaggle.com/datasets/georgerocha/ifooddataadvancedanalyticstest?select=ml_project1_data.csv">Kaggle.</a></li>
+          </ul>
+        </ul>
+        <h3>Demographic Insights.</h3>
+
+        <ul>
+          <h4>1. Age Distribution of Respondents</h4>    
+          <ul>
+            <img src="assets/img/iFood/1.png" width="550" height="450">
+            <li>The majority of respondents belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
+          <li>The least represented age group among respondents is 80+ (0%).</li>
+        </ul>
+        </ul>
+
+
+       <h4>2. Education Level</h4>
+
+        
       <ul>
-          <li>Higher acceptance rates among 35-39 age group, PhD holders, and those without partners or kids at home.</li>
-          <li>Majority of accepted offers are from respondents without kids or teenagers at home.</li>
-          <li>High-income individuals show the highest acceptance rates.</li>
+        <img src="assets/img/iFood/2.png" width="550" height="450">
+        <li>Respondents appear to be well-educated. Specifically, 51% hold a graduate-level degree. Among these, 21% have a PhD, 17% have a master's degree, 9% have completed a second-cycle degree, and 3% have basic education. </li>
       </ul>
-    </ul>
 
-    <ul>
-      <h4>Understanding The Data:</h4>
+        <h4>3. Marital Status </h4>
       <ul>
-        <li>The dataset contains 2,240 rows and several socio-demographic and firmographic features, along with campaign response flags.</li>
-        <li>Key features include past campaign responses (AcceptedCmp1 to AcceptedCmp5), customer complaints (Complain), enrollment date (DtCustomer), education level, marital status, household composition (Kidhome and Teenhome), income, spending on different product categories, and purchase behavior through various channels. </li>
-        <li>Data was obtained from <a href="https://www.kaggle.com/datasets/georgerocha/ifooddataadvancedanalyticstest?select=ml_project1_data.csv">Kaggle.</a></li>
+        <img src="assets/img/iFood/3.png" width="550" height="450">
+        <li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. </li>
       </ul>
-    </ul>
-    <h3>Demographic Insights.</h3>
-
-    <ul>
-      <h4>1. Age Distribution of Respondents</h4>    
-      <ul>
-        <img src="assets/img/iFood/1.png" width="550" height="450">
-        <li>The majority of respondents belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
-      <li>The least represented age group among respondents is 80+ (0%).</li>
-    </ul>
-    </ul>
-
-
-   <h4>2. Education Level</h4>
-
-    
-    <ul>
-      <img src="assets/img/iFood/2.png" width="550" height="450">
-      <li>Respondents appear to be well-educated. Specifically, 51% hold a graduate-level degree. Among these, 21% have a PhD, 17% have a master's degree, 9% have completed a second-cycle degree, and 3% have basic education. </li></ul>
-
-    <h4>3. Marital Status </h4>
-    <ul>
-    <img src="assets/img/iFood/3.png" width="550" height="450">
-     <li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. </li>
-  </ul>
 
     <h4>4. Household Composition (Small kids)</h4>
     
@@ -143,7 +144,7 @@
       <img src="assets/img/iFood/9.png" width="550" height="450">
       <li>Those without partners show higher acceptance rates. Specifically, 22% of single and widowed respondents accepted the offer, followed by 20% of divorced respondents. Acceptance rates are lower among married (11%) and those living together (10%). </li></ul>
 
-    <h4>4. Household Composition vs. Response </h4>
+    <h4>4. Household Composition(Small kids) vs. Response </h4>
     
     <ul>
       <img src="assets/img/iFood/10.png" width="550" height="450">
@@ -338,6 +339,43 @@ These metrics indicate that the model performs reasonably well in predicting cus
 </main>
 
 
+
+<!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Mahlori</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 
 </html>
