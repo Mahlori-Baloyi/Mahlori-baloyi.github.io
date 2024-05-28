@@ -6,12 +6,20 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Mahlori Baloyi Portfolio</title>
+
+  <style>
+  .image-container img {
+    width: 850px;
+    height: 350px;
+  }
+</style>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/icons/1.png" rel="icon">
+  <link href="assets/img//icons/1.png" rel="apple-touch-icon">
 
   
   <!-- Vendor CSS Files -->
@@ -28,7 +36,7 @@
 
 </head>
 
-<body>
+<body">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -79,34 +87,82 @@
             <p>We collected historical stock price data from <a href="https://www.kaggle.com/datasets/amirmotefaker/stock-market-analysis-data">Kaggle.</a> and preprocessed the data to handle
                 missing values and ensure data integrity.
             </p>
-          
+          <!-- ======= Stock Price Movements ======= -->
           <h2>Stock Price Movements.</h2>
            <p>We visualized the stock price movements for each company, identifying trends and patterns over the three-month period.
             </p>
 
+          <h4>Apple Stocks Movements.</h4>
+          <ul>
+            <div class="displayed-image">
+              <img src="assets/img/Stocks/apple.png" width="850" height="350">
+            </div>
             <ul>
               <li>Apple: Bullish continual pattern observed with consistent price increases.</li>
-              <li>Microsoft: Overall increasing trend with a brief period of decline at the beginning of the period.</li>
+            </ul>
+          </ul>
+          
+          <h4>Microsoft Stocks Movements.</h4>
+          <ul>
+            <div class="swiper-slide">
+              <img src="assets/img/Stocks/microsft.png" width="850" height="350">
+            </div>
+            <ul>
+            <li>Microsoft: Overall increasing trend with a brief period of decline at the beginning of the period.</li>
+          </ul>
+          </ul>
+          
+          <h4>Netflix Stocks Movements.</h4>
+          <ul>
+            <div class="swiper-slide">
+              <img src="assets/img/Stocks/nflx.png" width="850" height="350">
+            </div>
+            <ul>
               <li> Netflix: Initial decline followed by a sudden increase and subsequent decrease.</li>
+            </ul>
+          </ul>
+          
+          <h4>Google Stocks Movements.</h4>
+          <ul>
+            <div class="swiper-slide">
+              <img src="assets/img/Stocks/google.png" width="850" height="350">
+            </div>
+            <ul>
               <li>Google: Decreasing trend with a cup and handle pattern observed.</li>
             </ul>
+          </ul>
           
+              
+      <!-- ======= Moving averages ======= -->
 
+        <h2>Moving Averages</h2>
+        <p>Moving averages (MA10, MA20, MA30) were calculated to smooth out short-term fluctuations and identify long-term trends in stock prices. The results were visualized to provide insights into the trend direction.</p>
 
-        <h2>Moving Averages.</h2>
-        
-          <p>Moving averages (MA10, MA20, MA30) were calculated to smooth out short-term fluctuations and identify   long-term trends in stock prices. The results were visualized to provide insights into the trend direction.
-          
-          </p>
-        
-
+        <select id="company-select">
+    <option value="apple_m">Apple</option>
+    <option value="microsoft_m">Microsoft</option>
+    <option value="netflix_m">Netflix</option>
+    <option value="google_m">Google</option>
+  </select>
+  <div class="image-container">
+      <img id="displayed-image" src="assets/img/Stocks/microsoft.png" alt="Stock Moving Averages">
+    </div>
+        </ul>
 
 
         <h2>Volatility Analysis.</h2>
         
-          <p>We computed daily returns and analyzed the volatility of each stock. The findings indicated low volatility for the top tech companies, suggesting lower risk associated with investing in these stocks.
+        <p>We computed daily returns and analyzed the volatility of each stock. The findings indicated low volatility for the top tech companies, suggesting lower risk associated with investing in these stocks.
 
-          </p>
+        </p>
+
+         <select id="volatility-select">
+    <option value="apple_v">Apple</option>
+    <option value="microsoft_v">Microsoft</option>
+    <option value="netflix_">Netflix</option>
+    <option value="google_v">Google</option>
+  </select>
+  <img id="volatility-image" src="">
         
 
         <h2>Correlation Analysis.</h2>
