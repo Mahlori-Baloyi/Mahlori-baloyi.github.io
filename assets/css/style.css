@@ -760,7 +760,6 @@ main {
 }
 
 .hero .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0px;
@@ -814,11 +813,6 @@ main {
   .hero-single .hero-title {
     font-size: 3.5rem;
   }
-}
-
-.hero-single .breadcrumb {
-  background-color: transparent;
-  color: #0078ff;
 }
 
 .hero-single .breadcrumb .breadcrumb-item:before {
