@@ -760,6 +760,7 @@ main {
 }
 
 .hero .overlay-itro {
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0px;
@@ -1096,7 +1097,7 @@ main {
 --------------------------------------------------------------*/
 
 
-..footer-paralax {
+.footer-paralax {
   padding: 2rem 0 0 0;
 }
 
@@ -1341,7 +1342,7 @@ main {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer {
+.footer {
   text-align: center;
   color: #fff;
   padding: 15px 0;

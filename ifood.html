@@ -2,460 +2,260 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Ifood details</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  
-  <!-- Favicons -->
-  <link href="assets/img/icons/1.png" rel="icon">
-  <link href="assets/img/icons/1.png" rel="apple-touch-icon">
-
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Modeling for Marketing Campaign Optimization at iFood</title>
+  <link href="assets/css/ifoods.css" rel="stylesheet">
 <body>
+  <div class="container">
+      <h1>Enhancing Marketing Campaign Effectiveness with Predictive Modeling </h1>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top" style="background:rgba(0, 0, 0, 0.9)">
-    <div class="container d-flex align-items-center justify-content-between">
+      <h2>Project Title and Overview</h2>
+      <p><strong>Title:</strong> Predictive Modeling for Marketing Campaign Optimization at iFood</p>
+      <p><strong>Overview:</strong></p>
+      <ul>
+          <li>Developed a predictive model to identify iFood customers most likely to respond to marketing campaigns, aiming to enhance targeting efficiency and increase profitability.</li>
+          <li><strong>Context:</strong> iFood, a leading food delivery service in Brazil, needed a data-driven solution to improve its marketing strategies and maintain a competitive edge.</li>
+      </ul>
 
-      <h1 class="logo"><a href="index.html">Mahlori</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h2>Problem Statement</h2>
+      <p><strong>Business Problem:</strong></p>
+      <p>iFood faced challenges in optimizing its marketing campaigns to maximize response rates and return on investment (ROI). Inefficient targeting led to wasted resources and missed revenue opportunities.</p>
+      <p><strong>Technical Problem:</strong></p>
+      <p>The task was to build a robust predictive model that accurately forecasts customer responses to marketing campaigns, balancing precision (correctly identifying non-responders) and recall (correctly identifying responders).</p>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="index.html#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <h2>Data and Features</h2>
+      <p><strong>Dataset Description:</strong></p>
+      <ul>
+          <li><strong>Source:</strong> Historical data from six previous marketing campaigns.</li>
+          <li><strong>Size:</strong> 2,240 customer records.</li>
+          <li><strong>Features:</strong> Demographics (e.g., Age, Income), Purchasing behavior (e.g., spending on wine, meat), Campaign interactions (e.g., responses to previous campaigns).</li>
+      </ul>
+      <p><strong>Feature Engineering:</strong></p>
+      <ul>
+          <li><strong>Grouping Variables:</strong> Age and income were grouped to reduce the number of unique values, simplifying the analysis.</li>
+          <li><strong>New Features:</strong> Created interaction terms like combining the number of children in a household, and purchase behaviors.</li>
+          <li><strong>Handling Missing Data:</strong> Applied imputation techniques for missing values and removed outliers to improve data quality.</li>
+      </ul>
 
-    </div>
-  </header>
+      <h2>Modeling Approach</h2>
+      <p><strong>Model Selection:</strong></p>
+      <ul>
+          <li>Explored multiple models including <strong>Random Forest</strong> and <strong>Gradient Boosting</strong>.</li>
+          <li><strong>Final Model:</strong> Chose Random Forest for its robustness and ability to handle complex interactions among features and avoiding overfitting small data.</li>
+      </ul>
+      <p><strong>Hyperparameter Tuning:</strong></p>
+      <p>Used <strong>GridSearchCV</strong> to optimize hyperparameters like the number of trees, depth of trees, and minimum samples per split.</p>
+      <p><strong>Decision Threshold Adjustment:</strong></p>
+      <p>Adjusted the decision threshold to improve recall for the responder class, ensuring more potential customers were identified.</p>
 
-  <main id='main'>
-    <section id="portfolio-details" class="portfolio-details">
+      <h2>Model Performance</h2>
+      <p><strong>Initial Performance:</strong></p>
+      <table>
+          <thead>
+              <tr>
+                  <th></th>
+                  <th>Predicted: No</th>
+                  <th>Predicted: Yes</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>Actual: No</th>
+                  <td>534</td>
+                  <td>14</td>
+              </tr>
+              <tr>
+                  <th>Actual: Yes</th>
+                  <td>53</td>
+                  <td>45</td>
+              </tr>
+          </tbody>
+      </table>
+      <p><strong>Metrics:</strong></p>
+      <ul>
+          <li><strong>Class 0 (Non-Responders):</strong></li>
+          <ul>
+              <li>Precision: 0.91</li>
+              <li>Recall: 0.97</li>
+              <li>F1-Score: 0.94</li>
+          </ul>
+          <li><strong>Class 1 (Responders):</strong></li>
+          <ul>
+              <li>Precision: 0.76</li>
+              <li>Recall: 0.46</li>
+              <li>F1-Score: 0.57</li>
+          </ul>
+          <li><strong>Overall Accuracy:</strong> 90%</li>
+      </ul>
+      <p><strong>Issue:</strong> High accuracy but low recall for responders, leading to many missed potential customers.</p>
+
+      <p><strong>Improved Performance:</strong></p>
+      <table>
+          <thead>
+              <tr>
+                  <th></th>
+                  <th>Predicted: No</th>
+                  <th>Predicted: Yes</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>Actual: No</th>
+                  <td>463</td>
+                  <td>85</td>
+              </tr>
+              <tr>
+                  <th>Actual: Yes</th>
+                  <td>26</td>
+                  <td>72</td>
+              </tr>
+          </tbody>
+      </table>
+      <p><strong>Metrics:</strong></p>
+      <ul>
+          <li><strong>Class 0 (Non-Responders):</strong></li>
+          <ul>
+              <li>Precision: 0.95</li>
+              <li>Recall: 0.84</li>
+              <li>F1-Score: 0.89</li>
+          </ul>
+          <li><strong>Class 1 (Responders):</strong></li>
+          <ul>
+              <li>Precision: 0.46</li>
+              <li>Recall: 0.73</li>
+              <li>F1-Score: 0.56</li>
+          </ul>
+          <li><strong>Overall Accuracy:</strong> 83%</li>
+      </ul>
+      <p><strong>Outcome:</strong> Improved recall for responders, better balance between identifying potential customers and avoiding false positives.</p>
+
+      <h2>Business Impact</h2>
+      <p><strong>Quantitative Results:</strong> Estimated that improved targeting could increase marketing campaign profitability by up to [X]% through more efficient allocation of resources.</p>
+      <p><strong>Actionable Insights:</strong> Key customer segments with high responsiveness were identified, such as [specific age and income groups]. Suggested focusing future campaigns on these high-likelihood segments to maximize ROI.</p>
+
+      <h2>Technical Skills Demonstrated</h2>
+      <ul>
+          <li><strong>Programming Languages:</strong> Python (scikit-learn, pandas, numpy)</li>
+          <li><strong>Data Preprocessing:</strong> Imputation, outlier detection, feature scaling.</li>
+          <li><strong>Modeling Techniques:</strong> Random Forest, Gradient Boosting, ensemble methods.</li>
+          <li><strong>Evaluation Metrics:</strong> Precision, recall, F1-score, accuracy, AUC.</li>
+          <li><strong>Tools:</strong> Jupyter Notebooks, Git for version control, data visualization (matplotlib, seaborn).</li>
+      </ul>
+
+      <h2>Visuals and Documentation</h2>
+      <p><strong>Graphs and Charts:</strong></p>
+
       <div class="container">
+        <h1>Predictive Modeling for Marketing Campaign Optimization at iFood</h1>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <h1><strong>iFood Advanced Data Analyst Case Report.</strong></h1>
-          </div>
-          <h2>Introduction</h2>
-          <p>iFood, the leading food delivery app in Brazil, is present in over a thousand cities. To maintain and grow its market leadership, keeping a high customer engagement is crucial. This report analyzes a sample dataset that simulates customer meta-information and interactions with iFood campaigns. The goal is to analyze the data, uncover business opportunities and insights, and propose data-driven actions to optimize the results of future marketing campaigns.</p>
+        <h2>Feature Importance</h2>
+        <img src="assets/img/Ifood details_files/Visuals/Feature Importance.png" alt="Feature Importance">
 
-          <h2>Exploratory Data Analysis (EDA)</h2>
-          
-          <h4>Main Takeaways:</h4>
-            <ul>
-              <ul>
-                <li>Higher acceptance rates among 35-39 age group, PhD holders, and those without partners or kids at home.</li>
-                <li>Majority of accepted offers are from respondents without kids or teenagers at home.</li>
-                <li>High-income individuals show the highest acceptance rates.</li>
-              </ul>
-            </ul>
-          
-          
-          <h4>Understanding The Data:</h4>
-          <ul>
-            <ul>
-              <li>The dataset contains 2,240 rows and several socio-demographic and firmographic features, along with campaign response flags.</li>
-              <li>Key features include past campaign responses (AcceptedCmp1 to AcceptedCmp5), customer complaints (Complain), enrollment date (DtCustomer), education level, marital status, household composition (Kidhome and Teenhome), income, spending on different product categories, and purchase behavior through various channels. </li>
-              <li>Data was obtained from <a href="https://www.kaggle.com/datasets/georgerocha/ifooddataadvancedanalyticstest?select=ml_project1_data.csv">Kaggle.</a></li>
-            </ul>
-          </ul>
-          <h3>Demographic Insights.</h3>
+        <h2>ROC Curve</h2>
+        <img src="assets/img/Ifood details_files/Visuals/roc_curve.png" alt="ROC Curve">
 
-          
-          <h4>1. Age Distribution of Respondents</h4>  
-          <ul>  
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/1.png" width="550" height="450" alt=''>
-              </div>
-              <li>The majority of respondents belong to the 45-49 age group (18%). This group is followed by the 50-54 age group (14%), and then the 40-44 age group (13%).</li>
-              <li>The least represented age group among respondents is 80+ (0%).</li>
-            </ul>
-          </ul>
+        <h2>ROC Curve Adjusted</h2>
+        <img src="assets/img/Ifood details_files/Visuals/Receiver Operating Characteristic (Adjusted Threshold).png" alt="ROC Curve">
 
+        <h2>Confusion Matrix Comparison</h2>
+        <img src="assets/img/Ifood details_files/Visuals/Adjusted Threshold Model.png" alt="Confusion Matrix Comparison">
+
+        <h2>Precision-Recall Curve Comparison</h2>
+        <img src="assets/img/Ifood details_files/Visuals/Precision-Recall Curve Comparison.png" alt="Precision-Recall Curve">
+        <img src="assets/img/Ifood details_files/Visuals/Recall Curve Comparison.png" alt="Precision-Recall Curve">
         
-          <h4>2. Education Level</h4>    
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/2.png" width="550" height="450" alt=''>
-              </div>
-              <li>Respondents appear to be well-educated. Specifically, 51% hold a graduate-level degree. Among these, 21%  have a PhD, 17% have a master's degree, 9% have completed a second-cycle degree, and 3% have basic education. </li>
-            </ul>
-          </ul>
-
-
-          
-          <h4>3. Marital Status </h4>
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/3.png" width="550" height="450" alt=''>
-              </div>
-              <li>The marital status distribution shows 39% of respondents are married, 26% are living together, 21% are single, 11% are divorced, and 3% are widowed. 
-              </li>
-            </ul>
-          </ul>
-
-         
-          <h4>4. Household Composition (Small kids)</h4>
-          <ul> 
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/4.png" width="550" height="450" alt=''>
-              </div>
-              <li>In terms of children, 57% of respondents have no children at home, 41% have one child, and 2% have two children.
-              </li>
-              <h4>Household Composition (Teenagers)</h4>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/5.png" width="550" height="450" alt=''>
-              </div>
-              <li>Regarding teenagers, 51% have no teenagers at home, 46% have one teenager, and 2% have two teenagers. </li>
-            </ul>
-          </ul>
-
-
-      
-          <h4>5. Income Distribution </h4>
-          <ul>   
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/6.png" width="550" height="450" alt=''>
-              </div>
-              <li>The wealth distribution is even, with an equal number of respondents across every income quintile. </li>
-            </ul>
-          </ul>
-
-
-          <h3>Response Analysis</h3>
-          <ul>
-            <h4>1. Age Group vs. Response</h4>
-            
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/7.png" width="550" height="450" alt=''>
-              </div>
-              <li>
-                The 35-39 age group has the highest acceptance rate for the campaign (25%), followed by the 70+ group (21%). 
-              </li>
-            </ul>
-          </ul>
-
         
-          <h4>2. Education Level vs. Response </h4>
-          <ul>
-            <ul>
-             <div class="swiper-slide">
-                <img src="assets/img/Ifood/8.png" width="550" height="450" alt=''>
-              </div>
-              <li>There is a trend suggesting that respondents with higher education levels, especially those with a PhD, are more likely to accept the campaign offer. Specifically, 20% of PhD holders accepted the offer, followed by 15% of those with a master's degree, 13% of those with a graduate-level education, and 11% of those with a second-cycle education. </li>
-            </ul>
-          </ul>
-
-          
-
-          <h4>3. Marital Status vs. Response </h4>
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/9.png" width="550" height="450" alt=''>
-              </div>
-              <li>Those without partners show higher acceptance rates. Specifically, 22% of single and widowed respondents accepted the offer, followed by 20% of divorced respondents. Acceptance rates are lower among married (11%) and those living together (10%). </li>
-            </ul>
-          </ul>
-
-        
-
-          <h4>4. Household Composition(Small kids) vs. Response </h4>
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/10.png" width="550" height="450" alt=''>
-              </div>
-              <li>Majority of respondents who accepted the offer have no children (16%) or one child (12%). The acceptance rate drops significantly for respondents with two children (4%). 
-              </li>
-            </ul>
-          </ul>
-
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/11.png" width="550" height="450" alt=''>
-              </div>
-              <li>A similar trend is observed for teenagers at home, with 20% of respondents with no teenagers accepting the offer, compared to 9% with one teenager and 8% with two teenagers. 
-              </li>
-            </ul>
-          </ul>
-          
-          <h4>5. Income vs. Response </h4>
-          <ul>
-            <ul>
-              <div class="swiper-slide">
-                <img src="assets/img/Ifood/12.png" width="550" height="450" alt=''>
-              </div>
-              <li>The highest income group has the highest acceptance rate (28%), followed by the lowest income group (13%). Middle-income groups show lower acceptance rates. </li>
-            </ul>
-          </ul>
-        
-
-
-          <h3>Correlation Analysis </h3>
-          <h4>Income:</h4> 
-          <ul>
-          
-            <ul>
-              <li>Positively correlated with spending on wines (strong), meat products (strong), and purchases made through catalogs (strong).</li> 
-
-              <li>Negatively correlated with the number of web visits in the last month and the number of small children in the household. </li>
-            </ul>
-          </ul>
-
-          <h4>Number of Web Visits: </h4>
-          <ul>
-            <ul>
-              <li>Negatively correlated with catalog purchases and spending on meat products.</li> 
-            </ul>
-          </ul>
-
-
-          <h3>CUSTOMER SEGMENTATION AND PROFILES </h3>
-
-          <p>Based on income segmentation, four groups of customers were created. </p>
-
-          <ul>
-            <ol>
-              <li><strong>High Income Group</strong></li>
-
-              <ul><li>Characteristics: High spending on products, lowest number of website visits per month, prefer in-store purchases, low number of deals and catalog purchases, majority have no children at home.</li> </ul>
-
-              <li><strong>Low Income Group </strong></li>
-
-              <ul><li>Characteristics: Higher number of website visits, preferable catalog purchases, higher number of deals, have children at home. </li></ul>
-
-              <li><strong>Middle Income Group </strong></li>
-            
-              <ul><li>Characteristics: Moderate spending on products, balanced number of website visits and in-store purchases, majority have no children at home. </li></ul>
-             
-              <li><strong>Family Group </strong></li>
-
-              <ul><li>Characteristics: Lower spending on products, higher number of website visits, higher number of deals and catalog purchases, have children and teenagers at home.</li></ul>
-            
-            </ol>
-          </ul>
-
-          <div>
-            <h3>The table below shows the segements and the average of each characteristic.</h3>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 profile">
-                <p><strong>High Income Profile</strong></p>
-                <ul>
-                  <li>Income: 75,181</li>
-                  <li>Kidhome: 0</li>
-                  <li>Teenhome: 0</li>
-                  <li>MntWines: 562</li>
-                  <li>MntFruits: 71</li>
-                  <li>MntMeatProducts: 449</li>
-                  <li>MntFishProducts: 101</li>
-                  <li>MntSweetProducts: 73</li>
-                  <li>MntGoldProds: 78</li>
-                  <li>NumDealsPurchases: 1</li>
-                  <li>NumWebPurchases: 5</li>
-                  <li>NumCatalogPurchases: 6</li>
-                  <li>NumStorePurchases: 9</li>
-                  <li>NumWebVisitsMonth: 3</li>
-                  <li>Age: 52</li>
-                  <li>Education: Graduation</li>
-                </ul>
-              </div>
-              <div class="col-md-3 profile">
-                <p><strong>Low Income Group</strong></p>
-                <ul>
-                  <li>Income: 29,582</li>
-                  <li>Kidhome: 1</li>
-                  <li>Teenhome: 0</li>
-                  <li>MntWines: 33</li>
-                  <li>MntFruits: 7</li>
-                  <li>MntMeatProducts: 27</li>
-                  <li>MntFishProducts: 10</li>
-                  <li>MntSweetProducts: 7</li>
-                  <li>MntGoldProds: 18</li>
-                  <li>NumDealsPurchases: 2</li>
-                  <li>NumWebPurchases: 2</li>
-                  <li>NumCatalogPurchases: 1</li>
-                  <li>NumStorePurchases: 4</li>
-                  <li>NumWebVisitsMonth: 7</li>
-                  <li>Age: 42</li>
-                  <li>Education: Graduation</li>
-                </ul>
-              </div>
-              <div class="col-md-3 profile">
-                <p><strong>Middle Income Group</strong></p>
-                <ul>
-                  <li>Income: 59,510</li>
-                  <li>Kidhome: 0</li>
-                  <li>Teenhome: 0</li>
-                  <li>MntWines: 506</li>
-                  <li>MntFruits: 24</li>  
-                  <li>MntMeatProducts: 242</li>
-                  <li>MntFishProducts: 32</li>
-                  <li>MntSweetProducts: 24</li>
-                  <li>MntGoldProds: 64</li>
-                  <li>NumDealsPurchases: 4</li>
-                  <li>NumWebPurchases: 7</li>
-                  <li>NumCatalogPurchases: 3</li>
-                  <li>NumStorePurchases: 8</li>
-                  <li>NumWebVisitsMonth: 6</li>
-                  <li>Age: 55</li>
-                </ul>
-              </div>
-              <div class="col-md-3 profile">
-                <p><strong>Family Group</strong></p>
-                <ul>
-                  <li>Income: 41,518</li>
-                  <li>Kidhome: 1</li>
-                  <li>Teenhome: 1</li>
-                  <li>MntWines: 68</li>
-                  <li>MntFruits: 4</li>
-                  <li>MntMeatProducts: 26</li>
-                  <li>MntFishProducts: 6</li>
-                  <li>MntSweetProducts: 4</li>
-                  <li>MntGoldProds: 15</li>
-                  <li>NumDealsPurchases: 2</li>
-                  <li>NumWebPurchases: 2</li>
-                  <li>NumCatalogPurchases: 1</li>
-                  <li>NumStorePurchases: 4</li>
-                  <li>NumWebVisitsMonth: 6</li>
-                  <li>Age: 56</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <h3>Predictive Modeling </h3>
-
-          <p>Using a RandomForestClassifier, we developed a predictive model to identify customers most likely to respond positively to the marketing campaign. 
-
-          <ul>
-            <ul>
-              <li>Accuracy: 0.892 </li>
-
-              <li>AUC (Area Under Curve): 0.647 </li>
-
-              <li>RMSE (Root Mean Squared Error): 0.329 </li>
-            </ul>
-          </ul>
-
-          <p>These metrics indicate that the model performs reasonably well in predicting customer responses, with high accuracy and acceptable error rates. The model can be used to target customers more effectively in future campaigns, potentially increasing the acceptance rate and profitability. </p>
-
-          <h3>Recommendations </h3>
-
-          <ul>
-          <ol>
-            <li>
-              <strong>Targeted Campaigns: </strong>
-            </li>
-            <ul>
-              <li>Focus on customers with higher education levels, particularly PhD holders, as they show higher acceptance rates. </li>
-
-              <li>Tailor campaigns to single and widowed customers, who are more likely to accept offers. </li>
-            </ul>
-
-            <li>
-              <strong>Age-Specific Strategies: </strong></li>
-            <ul>
-              <li>Develop age-specific marketing strategies, with a particular focus on the 35-39 and 70+ age groups. </li>
-            </ul>
-
-            <li><strong>Income-Based Segmentation: </strong></li>
-
-            <ul>
-              <li>Implement income-based segmentation to target high-income individuals, who show the highest acceptance rates.</li> 
-            </ul>
-
-            <li><strong>Optimizing Household Targeting: </strong></li>
-
-            <ul><li>Consider household composition in marketing strategies, focusing on individuals without children or teenagers at home. </li></ul>
-
-          </ol></ul>
-
-
-          <h3>Conclusion </h3>
-
-          <p>By understanding the characteristics and behaviors of respondents, iFood can optimize its marketing campaigns to increase customer engagement and profitability. The predictive model developed can be a valuable tool for targeting the right customers and improving campaign outcomes. With these insights and strategies, iFood can strengthen its market position and achieve its business objectives. </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-<!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Mahlori</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <h2>Feature Engineering Process</h2>
+    <pre><code class="language-python">
+    # Handle missing values
+    X.fillna(X.mean(), inplace=True)
+    
+    # Create a new feature: Total number of children in the household
+    X['Total_Children'] = X['Kidhome'] + X['Teenhome']
+    
+    # Grouping income into bins
+    income_bins = [df['Income'].min(), 35178, 67480, df['Income'].max()]
+    income_labels = ['Low', 'Medium', 'High']
+    df['Income Quintile'] = pd.cut(df['Income'], bins=income_bins, labels=income_labels)
+    
+    #Interaction correlation
+    df['Income_AcceptedCmp3'] = df['Income'] * df['AcceptedCmp3']
+    df['Income_AcceptedCmp4'] = df['Income'] * df['AcceptedCmp4']
+    df['Income_AcceptedCmp5'] = df['Income'] * df['AcceptedCmp5']
+    df['Income_AcceptedCmp1'] = df['Income'] * df['AcceptedCmp1']
+    df['Income_MntMeatProducts'] = df['Income'] * df['MntMeatProducts']
+    df['Age_Total_Children'] = df['Income'] * df['Total_Children']
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    # Encoding categorical variables
+    X = pd.get_dummies(X, drop_first=True)
+   
+    </code></pre>
+    <h2>Model Training</h2>
+    <pre><code class="language-python">
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.model_selection import train_test_split
 
+    # Split the data
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.3, random_state=42)
+
+    # Train the Random Forest model
+    model = RandomForestClassifier(
+        n_estimators=200,
+        max_depth=20,
+        min_samples_split=5,
+        min_samples_leaf=1,
+        bootstrap=True,
+        random_state=42
+    )
+    model.fit(X_train, y_train)
+
+    # Predict on test data
+    y_pred = model.predict(X_test)
+    </code></pre>
+
+    <h2>Hyperparameter Tuning</h2>
+
+    <pre><code class="language-python">
+    from sklearn.model_selection import GridSearchCV
+
+    # Define the parameter grid
+    param_grid = {
+        'n_estimators': [100, 200, 300],
+        'max_depth': [10, 20, 30],
+        'min_samples_split': [2, 5, 10],
+        'min_samples_leaf': [1, 2, 4],
+        'bootstrap': [True, False]
+    }
+
+    # Initialize the grid search
+    grid_search = GridSearchCV(
+        estimator=model,
+        param_grid=param_grid,
+        cv=5,  # 5-fold cross-validation
+        n_jobs=-1,  # Use all available cores
+        verbose=2
+    )
+
+    # Fit the grid search to the data
+    grid_search.fit(X_train, y_train)
+
+    # Best hyperparameters
+    best_params = grid_search.best_params_
+    print("Best Hyperparameters:", best_params)
+    </code></pre>
+
+    
+      <h2>Link to Full Project</h2>
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/Mahlori-Baloyi/ifoods">Link to GitHub Repository</a> (Provide the actual link to your repository).</p>
+      
+      <h2>Conclusion and Learnings</h2>
+      <p><strong>Project Summary:</strong> Successfully developed a predictive model that significantly enhanced iFood's marketing campaign targeting strategy.</p>
+      <p><strong>Key Learnings:</strong> Gained experience in balancing precision and recall to meet specific business objectives. Enhanced understanding of feature engineering and the impact of different modeling techniques on real-world problems.</p>
+  </div>
 </body>
 
 
