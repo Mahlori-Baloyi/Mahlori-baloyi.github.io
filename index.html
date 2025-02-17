@@ -5,243 +5,782 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mahlori Baloyi Personal Portfolio</title>
+  <title>Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/M.png" rel="icon">
-  <link href="assets/img/M.png" rel="apple-touch-icon">
+  <link href="assets/img/icons/1.png" rel="icon">
+  <link href="assets/img/icons/1.png" rel="apple-touch-icon">
 
-  
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Mahlori</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <div class="profile">
-        <h1 class="text-light"><a href="index.html">Mahlori Baloyi</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/Mahlori77896031" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100087203859889" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/mahlori-baloyi-7680b317a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#Skills">Skills</a></li>
+          <li><a class="nav-link scrollto " href="#Tools">Tools</a></li>
+          <li><a class="nav-link scrollto " href="#Portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="#Certicates">Certicates</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background-image: url(assets/img/Image1.jpeg);">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Mahlori Baloyi</h1>
-      <p><span class="typed" data-typed-items="Data Scientist, Rise and rise again until lambs become lions"></span></p>
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero/thumbbig-948337.webp)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="hero-title mb-4"></h1>
+          <h1 class="hero-subtitle"><span class="typed" data-typed-items="WELCOME"></span></h1>
+         </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </div><!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about-mf sect-pt4 route">
       <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p></p>I am not a complicated person, I laugh a lot, I love the combination of music and coding,
-            I zone out a lot around natural things. I also believe that working harder than what I get
-             paid for is an investment for my future self.</p>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/Me/IMG_0981-removebg-preview.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Mahlori Baloyi</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Data Science and Systems Architect</span></p>
+                        <p><span class="title-s">Email: </span> <span>baloyimahlori@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>067 087 4020</span></p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Hi, I’m Mahlori, a detail-oriented Data Scientist with over 2 years of experience in data analysis, 
+                      web development, and machine learning. I hold a BSc in Physical Sciences (Physics & Applied Mathematics) 
+                      and a National Certificate in IT: Systems Development. I’m passionate about transforming complex data into 
+                      actionable insights and creating innovative solutions. My expertise in programming, machine learning, and 
+                      effective communication enables me to improve systems and drive impactful results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
-    
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- ======= Services Section ======= -->
+     <section id="Skills" class="about-mf sect-pt4 route">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <p><span>Programming Languages: Python</span> <span class="pull-right"></span></p>
-            <p><span>SQL</span> <span class="pull-right"></span></p>
-            <p><span>Git</span> <span class="pull-right"></span></p>
-            <p><span>Data Visualization</span><span class="pull-right"></span></p>
-            <p><span>Statistical Analysis</span> <span class="pull-right"></span></p>
-            <p><span>Decision Making</span> <span class="pull-right"></span></p>
-            <p><span>Attention to Detail</span> <span class="pull-right"></span></p>
-            <p><span>Project Management</span> <span class="pull-right"></span></p>
-            <p><span>Website development</Details></span> <span class="pull-right"></span></p>
-            <p><span>Dashbord creation</Details></span> <span class="pull-right"></span></p>
-
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <p><span>Computer Skills MS Office</span> <span class="pull-right"></span></p>
-            <p><span>Conceptual Ability</span> <span class="pull-right"></span></p>
-            <p><span>Teamwork</span> <span class="pull-right"></span></p>
-            <p><span>Problem-solving and Analysis</span> <span class="pull-right"></span></p>
-            <p><span>Drive for Results</span> <span class="pull-right"></span></p>
-            <p><span>Building Sustainability</span> <span class="pull-right"></span></p>
-            <p><span>Honesty and Integrity</Details></span> <span class="pull-right"></span></p>
-            <p><span>Machine Learning</Details></span> <span class="pull-right"></span></p>
-            
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-        
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Download resume <a href="CV/Mahlori Baloyi.pdf" download="Mahlori Baloyi">here</a></p>
-        </div>
-
-      
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-  
-          <div class="section-title">
-              <h2>Portfolio</h2>
-          </div>
-         <div class="row" data-aos="fade-up">
-              <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                      <li data-filter="*" class="filter-active">All</li>
-                      <li data-filter=".filter-EDA">EDA</li>
-                      <li data-filter=".filter-ML">Machine Learning</li>
+        <div class="row">
+          <div class="col-md-6">
+              <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                      <h5 class="title-left">
+                          Technical Skills
+                        <img src="assets/img/Skills/Screenshot_2024-05-24_at_09.32.31-removebg-preview.png" alt="" width="50" height="50">
+                      </h5>
+                  </div>
+                  <ul>
+                      <li>Programming</li>
+                      <li>Data Preprocessing</li>
+                      <li>Data Visualization</li>
+                      <li>Data Analytics</li>
+                      <li>Statistical Methods</li>
+                      <li>Data structure</li>
+                      <li>Database Management.</li>
+                      <li>Cloud computing</li>
+                      <li>Testing And Debugging</li>
+                      <li>Experimental Design And Analysis</li>
                   </ul>
               </div>
           </div>
 
-        
-                    
-          <div class="portfolio-item filter-EDA text-center">
-                      <h5>CUSTOMER BEHAVIOR</h5>
-                      
-                        <p><a href="CustomerBehavior.html">View Project</a></p>
-                           
-                          <a href="ifood.html">
-                                <img src="assets/img/portfolio/Consumer /items bought.png" class="img-fluid" alt="Stocks Market Analysis" style="max-width: 80%;">
-                            </a>
-                        
-                          </div>
-                      </div>
+          <div class="col-md-6">
+              <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                      <h5 class="title-left">
+                          Soft Skills
+                          <img src="assets/img/Skills/repair-tool.png" alt="" width="50" height="50">
+                      </h5>
                   </div>
+                  <ul>
+                    <li>Problem Understanding & Solving</li>
+                    <li>Critical Thinking</li>
+                    <li>Curiosity</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Effective Listening</li>
+                    <li>Storytelling</li>
+                    <li>Attention To Details</li>
+                    <li>Presentation</li>
+                    <li>Continous Learning</li>
+                  </ul>
               </div>
           </div>
-          <div class="portfolio-item filter-EDA text-center">
-          <h5>iFood Advanced Data Analyst Case</h5>
-          <a href="ifoods.html">View Project</a>
-          <div class="portfolio-wrap d-flex justify-content-center align-items-center">
-              <a href="ifood.html">
-                  <img src="assets/img/portfolio/ifood/histograms.jpg" class="img-fluid" alt="Stocks Market Analysis" style="max-width: 80%;">
-              </a>
+        </div>
+      </div>
+     </section>
+       
+        
+
+    <!-- ======= Fancy Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hero/work-3.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+             
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Tools Section ======= -->
+
+    <section id="Tools" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Tools
+              </h3>
+              <p class="subtitle-a">
+                Some of the tools I can use.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          
+          <div class="col-md-2">
+                <div class="work-img">
+                  <a><img src="assets/img/tools/office-365-new-logo.png" alt="" class="img-fluid"></a>
+                </div>
           </div>
 
-
-          <div class="portfolio-item filter-EDA text-center">
-            <h5> STOCKS MARKET ANALYSIS.</h5>
-            <p><a href="stocks.html">View Project.</a></p>
-            <div class="portfolio-wrap">
-                <a href="stocks.html">
-                    <img src="assets/img/portfolio/Stocks/Correlation.jpg" class="img-fluid" alt="Stocks Market Analysis" style="max-width: 80%;">
-                </a>
-              
+          <div class="col-md-3">
+            <div class="work-img">
+              <a><img src="assets/img/tools/PowerBi.png" alt="" class="img-fluid"></a>
             </div>
-        </div>
-        
-        
-        
-      
-  </section>
- 
-         
-  <!-- End Portfolio Section -->
-   
-    
+          </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+          <div class="col-md-3">
+            <div class="work-img">
+              <a><img src="assets/img/tools/access-removebg-preview.png" alt="" class="img-fluid"></a>
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="work-img">
+              <a><img src="assets/img/tools/GitHub-Logo-removebg-preview.png" alt="" class="img-fluid" height="auto"></a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="work-img">
+              <a><img src="assets/img/tools/Python-Symbol.png" alt="" class="img-fluid"></a>
+            </div>
+          </div>
+
+          
+          <div class="col-md-2">
+            <div class="work-img">
+              <a><img src="assets/img/tools/Scikit_learn_logo_small.svg.png" alt="" class="img-fluid" height="auto"></a>
+            </div>
+          </div>
+
+          <div class="col-md-2" style="margin-left: 60px;">
+            <div class="work-img">
+              <a><img src="assets/img/tools/0_ioDeujW3euLCfXew.png" alt="" class="img-fluid" height="auto"></a>
+            </div>
+          </div>
+
+          <div class="col-md-2" style="margin-left: 60px;">
+            <div class="work-img">
+              <a><img src="assets/img/tools/docker.png" alt="" class="img-fluid" height="auto"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="Portfolio" class="portfolio-mf sect-pt4 route">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <ul class="list-ico">
-                      
-            <li><span class="bi bi-geo-alt"></span> <a href="https://www.google.com/maps/place/120+Chris+Hani+Rd,+Chiawelo,+Soweto,+1818/@-26.2754165,27.8679436,17z/data=!3m1!4b1!4m5!3m4!1s0x1e95a6f91b6f80ed:0x74dc14146a4f65fe!8m2!3d-26.2754165!4d27.8701376" target="_blank">
-              120 Chris hani road 1818</a></li>
-            <li><span class="bi bi-phone"></span> <a href='tel:0670874020' target="_blank">067 087 4020</a></li>
-           <li><span class="bi bi-envelope"></span> <a href="mailto:baloyimahlori@example.com" target="_blank">Baloyimahlori@gmail.com</a></li> 
-            <li><span class="bi bi-facebook"></span><a href="https://www.facebook.com/profile.php?id=100087203859889" target="_blank"> Mahlori Baloyi</a></li>
-            <li><span class="bi bi-twitter"></span><a href="https://twitter.com/Mahlori77896031" target="_blank">@Mahlori77896031</a></li>
-          </ul>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Some of the projects I have done.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
         </div>
+        
+        <div class="row">
+          
+          <div class="col-md-4">
+            <div class="work-box">
+                <div class="work-img">
+                  <a href="ifood.html"><img src="assets/img/Ifood/Screenshot 2024-09-02 at 19.56.30.png" alt="" class="img-fluid"></a>
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">iFood-Advanced-Data-Analyst-Case</h2>
+                    <p>Understanding characteristic features of customers to maximize customer engagement and profitability.
+                    </p>
+                     <div class="w-like">
+                      <a href="ifood.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+              
+                    <div class="w-more">
+                       <span class="badge bg-primary">Data Visualization</span> 
+                      <span class="badge bg-primary">Data Analysis</span> 
+                      <span class="badge bg-success">Data Cleaning</span> 
+                      <span class="badge bg-success">Data Processing</span> 
+                      <span class="badge bg-success">Customer Segmentation</span> 
+                      <span class="badge bg-primary">Data-driven Decision Making</span> 
+                      <span class="badge bg-primary">Business Insights</span> 
+                      <span class="badge bg-success">Statistical Analysis</span> 
+                      <span class="badge bg-success">Exploratory Data Analysis (EDA)</span>       
+                      <span class="badge bg-success"> Business Intelligence</span>
+                      <span class="badge bg-primary"> Problem Solving</span>
+                      <span class="badge bg-primary"> Critical Thinking</span>
 
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="mboweni_acc.html" data-gallery="portfolioGallery">
+                <div class="work-img">
+                  <img src="assets/img//Mboweni Acc/1.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Mboweni Accountants Website.</h2>
+                    <p>Dynamic online presence that effectively showcases Mboweni Acconutants services and expertise in the field of accounting.
+                    </p>
+                     <div class="w-like">
+                      <a href="mboweni_acc.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+              
+                    <div class="w-more">
+                       <span class="badge bg-success">Web Design</span> 
+                       <span class="badge bg-success">Prototyping</span> 
+                       <span class="badge bg-success">UI/UX Design</span> 
+                       <span class="badge bg-success">Figma</span>
+                       <span class="badge bg-primary">HTML</span> 
+                       <span class="badge bg-primary">CSS</span>
+                       <span class="badge bg-primary">JavaScript</span> 
+                       <span class="badge bg-primary">Frontend Development</span>
+                       <span class="badge bg-secondary">GitHub</span> 
+                       <span class="badge bg-info">Domain Configuration</span>
+                       <span class="badge bg-info">Brand Identity</span> 
+                       <span class="badge bg-info">Client Collaboration</span>
+                       <span class="badge bg-info">Communication</span> 
+                       <span class="badge bg-primary">Problem Solving</span>
+            <!-- Add more tags as needed -->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="stocks.html" data-gallery="portfolioGallery">
+                <div class="work-img">
+                  <img src="assets/img/Stocks/1.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Stocks Market Analysis.</h2>
+                    <p>The analysis includes examining trends, calculating moving averages, assessing volatility, and conducting correlation analysis to gain insights into the stock market dynamics. 
+                    </p>
+                     <div class="w-like">
+                      <a href="stocks.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+              
+                    <div class="w-more">
+                       <span class="badge bg-success">Data Visualization</span> 
+                       <span class="badge bg-primary">Moving Averages</span> 
+                       <span class="badge bg-primary">Volatility Analysis</span> 
+                       <span class="badge bg-primary">Correlation Analysis</span> 
+                       <span class="badge bg-primary">Communication</span> 
+                       <span class="badge bg-primary">Interpretation</span> 
+                       <span class="badge bg-success">Data Handling</span> 
+                       <span class="badge bg-success">Data Exploration</span> 
+            <!-- Add more tags as needed -->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+ </section><!-- End Portfolio Section -->
+
+
+  <!-- ======= Certificates Section ======= -->
+
+
+  
+
+  <section id="Certicates" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Certificates
+            </h3>
+            <div class="line-mf"></div>
+          </div>
         </div>
+      </div>
+    <div class="row">
 
+      <div class="col-md-4">
+        <div class="work-box">
+
+            <a href="assets/img/Certicates/IBM DS0103EN Certificate _ Cognitive Class.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/IBM DS0103EN Certificate _ Cognitive Class.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+
+            <a href="assets/img/Certicates/soft skills.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/soft skills.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+
+            <a href="assets/img/Certicates/Screenshot 2024-08-15 at 20.10.51.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/Screenshot 2024-08-15 at 20.10.51.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="assets/img/Certicates/MICT.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/MICT.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="assets/img/Certicates/university.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/university.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="assets/img/Certicates/MC.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/MC.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+
+            <a href="assets/img/Certicates/python.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/python.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="work-box">
+
+            <a href="assets/img/Certicates/sql.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/Certicates/sql.png" alt="" class="img-fluid">
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+    <!-- ======= Blog Section ======= 
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> End Blog Section -->
+
+    <!-- ======= Contact Section ======= 
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at.
+                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                        mollitia inventore?
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
+                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> End Contact Section -->
+        <!-- ======= Contact Section ======= -->
+        <div class="row"></div>
+  <section id="contact" class="paralax-mf bg-image sect-mt4 route" style="background-image: url(assets/img/hero/1331108.jpeg)">
+   
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  
+                    
+                  <div class="col-md-12 text-center">
+                    <div class="d-flex justify-content-center">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Contact
+                      </h5>
+                    </div>
+                    </div>
+                    <div class="more-info">
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> <a href="https://www.google.com/maps/place/120+Chris+Hani+Rd,+Chiawelo,+Soweto,+1818/@-26.2754165,27.8679436,17z/data=!3m1!4b1!4m5!3m4!1s0x1e95a6f91b6f80ed:0x74dc14146a4f65fe!8m2!3d-26.2754165!4d27.8701376" target="_blank">
+                          120 Chris Hani Road  Chiawelo 1818</a>
+                        <span class="bi bi-phone"></span> <a href='tel:0670874020' target="_blank">067 087 4020        </a>
+                      <span class="bi bi-envelope"></span> <a href="mailto:baloyimahlori@example.com" target="_blank">Baloyimahlori@gmail.com</a></li> 
+                      </ul>
+                    </div>
+                    <div class="list-ico">
+                      <ul>
+                        <li><span class="bi bi-facebook"></span><a href="https://www.facebook.com/profile.php?id=100087203859889" target="_blank"> Mahlori Baloyi</a>
+                        <span class="bi bi-twitter"></span><a href="https://twitter.com/Mahlori77896031" target="_blank">@Mahlori77896031</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
+  </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Mahlori</strong>. All Rights Reserved</p>
+            <div class="credits">
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
